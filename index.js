@@ -1,6 +1,6 @@
 const { Client, GatewayIntentBits, Events, Partials } = require("discord.js");
 const keepAlive = require("./keepalive");
-require("dotenv").config();
+
 keepAlive();
 
 
