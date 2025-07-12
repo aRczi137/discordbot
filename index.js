@@ -58,5 +58,5 @@ client.on(Events.MessageCreate, async (message) => {
   }
 });
 
-client.login();
+client.login(MTM5MzM3NzAxNTA5NjQxMDE2Mw.GCZ_Rk.V5t-TrnnQxpEu6naNYDy0qjF-0Utdi1Cy5nEDk);
 
