@@ -1,6 +1,8 @@
 const { Client, GatewayIntentBits, Events, Partials } = require("discord.js");
 const keepAlive = require("./keepalive");
-require("dotenv").config();
+const path = require('path')
+require('dotenv').config({ path: path.resolve(__dirname, '.env') })
+const TOKEN = process.env.DISCORD_TOKEN
 
 keepAlive();
 
@@ -58,5 +60,5 @@ client.on(Events.MessageCreate, async (message) => {
   }
 });
 
-client.login(MTM5MzM3NzAxNTA5NjQxMDE2Mw.GCZ_Rk.V5t-TrnnQxpEu6naNYDy0qjF-0Utdi1Cy5nEDk);
+client.login(TOKEN);
 
