@@ -60,5 +60,5 @@ client.on(Events.MessageCreate, async (message) => {
   }
 });
 
-client.login(TOKEN);
+client.login('MTM5MzM3NzAxNTA5NjQxMDE2Mw.GL3V0A.MKaN10n8KQqhdpBNormi-lMUC_M62mR1yv1Nd0');
 
