@@ -1,9 +1,10 @@
 const { Client, GatewayIntentBits, Events, Partials } = require("discord.js");
 const keepAlive = require("./keepalive");
+require("dotenv").config();
 
 keepAlive();
 
-
+const DISCORD_TOKEN = process.env.DISCORD_TOKEN;
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
@@ -58,5 +59,5 @@ client.on(Events.MessageCreate, async (message) => {
   }
 });
 
-client.login();
+client.login(DISCORD_TOKEN);
 
